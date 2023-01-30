@@ -9,29 +9,111 @@
 	</head>
 	<body>
 		<h1>Employee Wellness Survey</h1>
-		<form>
-			<fieldset>
-				<label for="first-name"
-					>First Name:
-					<input id="first-name" name="first-name" type="text" />
-				</label>
-				<label for="last-name"
-					>Last Name:
-					<input id="last-name" name="last-name" type="text" />
-				</label>
-				<label for="age"
-					>Age:
-					<input id="age" name="age" type="number" />
-				</label>
-				<label for="gender"
-					>Gender:
-					<select id="gender" name="gender">
-						<option value="">(Select One)</option>
-						<option value="male">Male</option>
-						<option value="female">Female</option>
-					</select>
-				</label>
-			</fieldset>
-		</form>
+		<section class="container">
+			<form>
+				<fieldset>
+					<label for="first-name"
+						>First Name:
+						<input id="first-name" name="first-name" required type="text" />
+					</label>
+					<label for="last-name"
+						>Last Name:
+						<input id="last-name" name="last-name" type="text" required />
+					</label>
+					<label for="age"
+						>Age:
+						<input id="age" name="age" type="number" required />
+					</label>
+					<label for="gender"
+						>Gender:
+						<select id="gender" name="gender">
+							<option value="">(Select One)</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend>
+						Please check the conditions below if you are currently suffering
+						from, or have suffered from them in the past.
+					</legend>
+					<label for="allergies"
+						>Allergies <input type="checkbox" id="allergies" name="allergies"
+					/></label>
+					<label for="diabetes"
+						>Diabetes <input type="checkbox" id="diabetes" name="diabetes"
+					/></label>
+					<label for="high-blood-pressure"
+						>High Blood Pressure
+						<input
+							type="checkbox"
+							id="high-blood-pressure"
+							name="high-blood-pressure"
+					/></label>
+					<label for="stomach-disorders"
+						>Stomach Disorders
+						<input
+							type="checkbox"
+							id="stomach-disorders"
+							name="stomach-disorders"
+					/></label>
+					<label for="anemia"
+						>Anemia <input type="checkbox" id="anemia" name="anemia"
+					/></label>
+					<label for="hearing-loss"
+						>Hearing Loss
+						<input type="checkbox" id="hearing-loss" name="hearing-loss"
+					/></label>
+					<label for="joint-disorder"
+						>Joint Disorder
+						<input type="checkbox" id="joint-disorder" name="joint-disorder"
+					/></label>
+					<label for="vision-problems"
+						>Vision Problems
+						<input type="checkbox" id="vision-problems" name="vision-problems"
+					/></label>
+					<label for="asthma"
+						>Asthma <input type="checkbox" id="asthma" name="asthma"
+					/></label>
+					<label for="heart-disease"
+						>Heart Disease
+						<input type="checkbox" id="heart-disease" name="heart-disease"
+					/></label>
+					<label for="sinus-infection"
+						>Sinus Infection
+						<input type="checkbox" id="sinus-infection" name="sinus-infection"
+					/></label>
+				</fieldset>
+				<fieldset>
+					<p>
+						Are you currently under a physician's care for any chronic condition
+						or illness?
+					</p>
+					<label for="chronic-illness"
+						>Yes
+						<input type="radio" id="chronic-illness-y" name="chronic-illness"
+					/></label>
+					<label for="chronic-illness"
+						>No
+						<input type="radio" id="chronic-illness-n" name="chronic-illness"
+					/></label>
+					<p>Are you currently taking any prescription medication?</p>
+					<label for="prescribed"
+						>Yes <input type="radio" id="prescribed" name="prescribed"
+					/></label>
+					<label for="prescribed"
+						>No <input type="radio" id="prescribed-n" name="prescribed"
+					/></label>
+					<p>If taking medication, do you expect to be doing so long term?</p>
+					<label for="long-term-meds"
+						>Yes <input type="radio" id="long-term-meds" name="long-term-meds"
+					/></label>
+					<label for="long-term-meds"
+						>No <input type="radio" id="long-term-meds-n" name="long-term-meds"
+					/></label>
+				</fieldset>
+			</form>
+		</section>
 	</body>
 </html>
