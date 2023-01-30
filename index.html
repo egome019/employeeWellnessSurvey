@@ -10,7 +10,7 @@
 	<body>
 		<h1>Employee Wellness Survey</h1>
 		<section class="container">
-			<form>
+			<form method="post" action="https://www.youtube.com/watch?v=A-r9sj7zHJ4">
 				<fieldset>
 					<label for="first-name"
 						>First Name:
@@ -32,21 +32,32 @@
 							<option value="female">Female</option>
 						</select>
 					</label>
+					<label for="email"
+						>Email:
+						<input id="email" name="email" type="email" required />
+					</label>
 				</fieldset>
-				<fieldset>
+				<fieldset class="cols">
 					<legend>
 						Please check the conditions below if you are currently suffering
 						from, or have suffered from them in the past.
 					</legend>
 					<label for="allergies"
-						>Allergies <input type="checkbox" id="allergies" name="allergies"
+						>Allergies
+						<input
+							class="align"
+							type="checkbox"
+							id="allergies"
+							name="allergies"
 					/></label>
 					<label for="diabetes"
-						>Diabetes <input type="checkbox" id="diabetes" name="diabetes"
+						>Diabetes
+						<input class="align" type="checkbox" id="diabetes" name="diabetes"
 					/></label>
 					<label for="high-blood-pressure"
 						>High Blood Pressure
 						<input
+							class="align"
 							type="checkbox"
 							id="high-blood-pressure"
 							name="high-blood-pressure"
@@ -54,35 +65,58 @@
 					<label for="stomach-disorders"
 						>Stomach Disorders
 						<input
+							class="align"
 							type="checkbox"
 							id="stomach-disorders"
 							name="stomach-disorders"
 					/></label>
 					<label for="anemia"
-						>Anemia <input type="checkbox" id="anemia" name="anemia"
+						>Anemia
+						<input class="align" type="checkbox" id="anemia" name="anemia"
 					/></label>
 					<label for="hearing-loss"
 						>Hearing Loss
-						<input type="checkbox" id="hearing-loss" name="hearing-loss"
+						<input
+							type="checkbox"
+							class="align"
+							id="hearing-loss"
+							name="hearing-loss"
 					/></label>
 					<label for="joint-disorder"
 						>Joint Disorder
-						<input type="checkbox" id="joint-disorder" name="joint-disorder"
+						<input
+							type="checkbox"
+							id="joint-disorder"
+							class="align"
+							name="joint-disorder"
 					/></label>
 					<label for="vision-problems"
 						>Vision Problems
-						<input type="checkbox" id="vision-problems" name="vision-problems"
+						<input
+							type="checkbox"
+							id="vision-problems"
+							class="align"
+							name="vision-problems"
 					/></label>
 					<label for="asthma"
-						>Asthma <input type="checkbox" id="asthma" name="asthma"
+						>Asthma
+						<input type="checkbox" id="asthma" name="asthma" class="align"
 					/></label>
 					<label for="heart-disease"
 						>Heart Disease
-						<input type="checkbox" id="heart-disease" name="heart-disease"
+						<input
+							type="checkbox"
+							id="heart-disease"
+							name="heart-disease"
+							class="align"
 					/></label>
 					<label for="sinus-infection"
 						>Sinus Infection
-						<input type="checkbox" id="sinus-infection" name="sinus-infection"
+						<input
+							type="checkbox"
+							id="sinus-infection"
+							name="sinus-infection"
+							class="align"
 					/></label>
 				</fieldset>
 				<fieldset>
@@ -92,43 +126,71 @@
 					</p>
 					<label for="chronic-illness"
 						>Yes
-						<input type="radio" id="chronic-illness-y" name="chronic-illness"
+						<input
+							type="radio"
+							id="chronic-illness-y"
+							name="chronic-illness"
+							class="align"
 					/></label>
 					<label for="chronic-illness"
 						>No
-						<input type="radio" id="chronic-illness-n" name="chronic-illness"
+						<input
+							type="radio"
+							id="chronic-illness-n"
+							name="chronic-illness"
+							class="align"
 					/></label>
 					<p>Are you currently taking any prescription medication?</p>
 					<label for="prescribed"
-						>Yes <input type="radio" id="prescribed" name="prescribed"
+						>Yes
+						<input type="radio" id="prescribed" name="prescribed" class="align"
 					/></label>
 					<label for="prescribed"
-						>No <input type="radio" id="prescribed-n" name="prescribed"
+						>No
+						<input
+							type="radio"
+							id="prescribed-n"
+							name="prescribed"
+							class="align"
 					/></label>
 					<p>If taking medication, do you expect to be doing so long term?</p>
 					<label for="long-term-meds"
-						>Yes <input type="radio" id="long-term-meds" name="long-term-meds"
+						>Yes
+						<input
+							type="radio"
+							id="long-term-meds"
+							name="long-term-meds"
+							class="align"
 					/></label>
 					<label for="long-term-meds"
-						>No <input type="radio" id="long-term-meds-n" name="long-term-meds"
+						>No
+						<input
+							type="radio"
+							id="long-term-meds-n"
+							name="long-term-meds"
+							class="align"
 					/></label>
 				</fieldset>
 				<fieldset>
 					<p>Do you currently use tobacco products? If so, how often?</p>
 					<label for="cig-usage"
-						>Daily <input type="radio" id="cig-usage-d" name="cig-usage"
+						>Daily
+						<input type="radio" id="cig-usage-d" name="cig-usage" class="align"
 					/></label>
 					<label for="cig-usage"
-						>Weekly <input type="radio" id="cig-usage-w" name="cig-usage"
+						>Weekly
+						<input type="radio" id="cig-usage-w" name="cig-usage" class="align"
 					/></label>
 					<label for="cig-usage"
-						>Monthly <input type="radio" id="cig-usage-m" name="cig-usage"
+						>Monthly
+						<input type="radio" id="cig-usage-m" name="cig-usage" class="align"
 					/></label>
 					<label for="cig-usage"
-						>Occasionally <input type="radio" id="cig-usage-o" name="cig-usage"
+						>Occasionally
+						<input type="radio" id="cig-usage-o" name="cig-usage" class="align"
 					/></label>
 					<br />
-					<label for="cig-num"
+					<label class="text" for="cig-num"
 						>Approximately how many cigarettes(or equivalent) do you smoke per
 						day? <input type="number" id="cig-num" name="cig-num"
 					/></label>
@@ -136,22 +198,24 @@
 				<fieldset>
 					<p>How often do you perform aerobic exercise?</p>
 					<label for="aerobic"
-						>Daily <input type="radio" id="aerobic-d" name="aerobic"
+						>Daily
+						<input type="radio" id="aerobic-d" name="aerobic" class="align"
 					/></label>
 					<label for="aerobic"
 						>Two or more times per week
-						<input type="radio" id="aerobic-2w" name="aerobic"
+						<input type="radio" id="aerobic-2w" name="aerobic" class="align"
 					/></label>
 					<label for="aerobic"
 						>Two or more times per month
-						<input type="radio" id="aerobic-2m" name="aerobic"
+						<input type="radio" id="aerobic-2m" name="aerobic" class="align"
 					/></label>
 					<label for="aerobic"
-						>Monthly <input type="radio" id="aerobic-m" name="aerobic"
+						>Monthly
+						<input type="radio" id="aerobic-m" name="aerobic" class="align"
 					/></label>
 					<label for="aerobic"
 						>Less than once a month
-						<input type="radio" id="aerobic-1" name="aerobic"
+						<input type="radio" id="aerobic-1" name="aerobic" class="align"
 					/></label>
 					<br />
 					<p>
@@ -159,53 +223,96 @@
 						height?
 					</p>
 					<label for="ideal-weight"
-						>Yes <input type="radio" id="ideal-weight-y" name="ideal-weight"
+						>Yes
+						<input
+							type="radio"
+							id="ideal-weight-y"
+							name="ideal-weight"
+							class="align"
 					/></label>
 					<label for="ideal-weight"
-						>No <input type="radio" id="ideal-weight-n" name="ideal-weight"
+						>No
+						<input
+							type="radio"
+							id="ideal-weight-n"
+							name="ideal-weight"
+							class="align"
 					/></label>
 					<label for="ideal-weight"
 						>Uncertain
-						<input type="radio" id="ideal-weight-u" name="ideal-weight"
+						<input
+							type="radio"
+							id="ideal-weight-u"
+							name="ideal-weight"
+							class="align"
 					/></label>
 					<label for="ideal-weight"
 						>Prefer not to answer
-						<input type="radio" id="ideal-weight-p" name="ideal-weight"
+						<input
+							type="radio"
+							id="ideal-weight-p"
+							name="ideal-weight"
+							class="align"
 					/></label>
 					<br />
 					<p>How often do you consume soda?</p>
 					<label for="soda-consump"
 						>Several times a day
-						<input type="radio" id="soda-consump-x" name="soda-consump"
+						<input
+							type="radio"
+							id="soda-consump-x"
+							name="soda-consump"
+							class="align"
 					/></label>
 					<label for="soda-consump"
 						>Once daily
-						<input type="radio" id="soda-consump-1" name="soda-consump"
+						<input
+							type="radio"
+							id="soda-consump-1"
+							name="soda-consump"
+							class="align"
 					/></label>
 					<label for="soda-consump"
 						>Several times a week
-						<input type="radio" id="soda-consump-s" name="soda-consump"
+						<input
+							type="radio"
+							id="soda-consump-s"
+							name="soda-consump"
+							class="align"
 					/></label>
 					<label for="soda-consump"
-						>Rarely <input type="radio" id="soda-consump-r" name="soda-consump"
+						>Rarely
+						<input
+							type="radio"
+							id="soda-consump-r"
+							name="soda-consump"
+							class="align"
 					/></label>
 					<label for="soda-consump"
-						>Never <input type="radio" id="soda-consump-n" name="soda-consump"
+						>Never
+						<input
+							type="radio"
+							id="soda-consump-n"
+							name="soda-consump"
+							class="align"
 					/></label>
 					<br />
 					<p>How often do you consume fast food meals?</p>
 					<label for="fast-food"
-						>Daily <input type="radio" id="fast-food-d" name="fast-food"
+						>Daily
+						<input type="radio" id="fast-food-d" name="fast-food" class="align"
 					/></label>
 					<label for="fast-food"
 						>A few times each week
-						<input type="radio" id="fast-food-x" name="fast-food"
+						<input type="radio" id="fast-food-x" name="fast-food" class="align"
 					/></label>
 					<label for="fast-food"
-						>Weekly <input type="radio" id="fast-food-w" name="fast-food"
+						>Weekly
+						<input type="radio" id="fast-food-w" name="fast-food" class="align"
 					/></label>
 					<label for="fast-food"
-						>Rarely <input type="radio" id="fast-food-r" name="fast-food"
+						>Rarely
+						<input type="radio" id="fast-food-r" name="fast-food" class="align"
 					/></label>
 				</fieldset>
 				<button type="submit">Submit</button>
